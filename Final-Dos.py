@@ -62,7 +62,7 @@ def hack():
         vegeta.send( message )
         vegeta.sendto( message, (ip, 80) )
         vegeta.send( message );
-    except socket.error, msg:
+    except socket.error:
         print("\033[94m[✘]\033[96m Error , Connection Failed")
     print ("\033[94m [✔]\033[92m Sent \033[97m : \033[91m "+  message)
     vegeta.close()
